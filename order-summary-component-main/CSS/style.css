@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+  /* General */
+*,
+*::before,                    
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Red Hat Display', sans-serif;
+    --clr-p-blue: #e0e8ff;
+    --clr-bright-blue: #3829e0;
+    --clr-vp-blue: #f5f7ff;
+    --clr-des-blue: #7280a7;
+    --clr-dark-blue: #1f2f56;
+    height: 100vh;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+}
+
+/* Card */
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.349);
+    margin: 20px auto 0px;
+    width: 380px;
+    height: 565px;
+    border-radius: 10px;
+  }
+
+  /* Header Image */
+.header_img {
+    background-image: url(../images/illustration-hero.svg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+  /* Info */
+h1 {
+    color: var(--clr-dark-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 35px 0px 20px 0px;
+}
+
+p {
+    color: var(--clr-des-blue);
+    text-align: center;
+    margin: 10px 10px;
+}
+
+  /* Choose a plan */
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto 0px;
+    padding: 10px 15px;
+    max-width: 280px;
+    background-color: var(--clr-vp-blue);
+    border-radius: 10px;
+}
+
+.plan_text {
+    color: var(--clr-des-blue);
+}
+
+.plan_period {
+    color: var(--clr-dark-blue);
+    font-weight: 700;
+}
+
+.change_button > a {
+    margin-left: 30px;
+    font-weight: 700;
+    color: var(--clr-bright-blue);
+}
+
+  /* Pay/Cancel buttons */
+.pay_button {
+    display: block;
+    box-shadow: 0px 10px 10px #00000052;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
+    max-width: 300px;
+    margin: 20px auto 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+    background-color: var(--clr-bright-blue);
+}
+
+.cancel_button {
+    display: block;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px auto 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--clr-des-blue);
+    background-color: #ffffff00;
+}
