@@ -144,9 +144,15 @@ body {
     border-radius: 5px;
 }
 
+.stats__icon {
+    width: 12px;
+}
+
 .stats__label {
     font-size: .7em;
     font-weight: 700;
+    position: relative;
+    left: -15px;
 }
 
 .stats__num {
@@ -190,4 +196,5 @@ body {
     font-size: .65em;
     font-weight: 700;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.150);
+    cursor: pointer;
 }
