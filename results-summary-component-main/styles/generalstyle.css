@@ -49,7 +49,7 @@ body {
 /* Left Card */
 
 .result {
-    max-width: 215px;
+    width: 215px;
     height: 300px;
     padding: 25px;
     border-radius: 20px;
@@ -102,10 +102,24 @@ body {
 
 /* Right Card */
 
-.provisorio {
-    max-width: 215px;
+.summary {
+    width: 215px;
     height: 300px;
     padding: 25px;
     border-radius: 20px;
     text-align: center;
+    background-color: bisque;
+}
+
+.summary__title {
+    font-weight: 700;
+    font-size: .9em;
+    text-align: left;
+    color: var(--gray-blue);
+}
+
+.stats {
+    width: 170px;
+    height: 160px;
+    background-color: white;
 }
