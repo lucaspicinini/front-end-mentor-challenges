@@ -60,7 +60,7 @@ body {
     height: 300px;
     padding: 25px;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue)) ;
+    background-image: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
     text-align: center;
     color: white;
 }
@@ -197,4 +197,8 @@ body {
     font-weight: 700;
     color: var(--pale-blue);
     cursor: pointer;
+}
+
+.summary__button:hover {
+    background-image: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue)) ;
 }
