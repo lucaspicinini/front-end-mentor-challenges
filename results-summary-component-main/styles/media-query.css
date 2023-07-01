@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Media Query */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container__block {
+    display: flex;
+    min-width: 215px;
+    min-height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.100);
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
