@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700;800&display=swap');
+
+/* Variables */
+
+:root {
+--light-red: #ff5757;
+--orangey-yellow: #ffb01f;
+--green-teal: #00bd91;
+--cobalt-blue: #1125d4;
+--slate-blue: #7857ff; /*background */
+--royal-blue: #2e2be9; /*background */
+--violet-blue: #4e21ca00; /*circle */
+--persian-blue: #2421ca52; /*circle */
+--white: #ffffff;
+--pale-blue: #ebf1ff;
+--light-lavender: #c8c7ff;
+--gray-blue: #303b5a;
+--font-primary: 'Hanken Grotesk', sans-serif;
+}
+
+/* General Config. */
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-primary);
+}
+
+/* Main Block */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__block {
+    display: flex;
+    max-width: 430px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/* Left Card */
+
+.result {
+    max-width: 215px;
+    height: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue)) ;
+    color: white;
+    text-align: center;
+}
+
+.result__title {
+    font-weight: 500;
+    font-size: .9em;
+    color: var(--light-lavender);
+}
+
+.result__circle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 10px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--royal-blue), var(--violet-blue)) ;
+}
+
+.result__score {
+    height: 50px;
+    font-size: 2.6em;
+}
+
+.result__total {
+    font-size: .6em;
+    font-weight: 700;
+    color: #896cfd;
+}
+
+.result__congrats {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.result__text {
+    font-size: .7em;
+    color: var(--light-lavender);
+    font-weight: 300;
+    width: 160px;
+}
+
+/* Right Card */
+
+.provisorio {
+    max-width: 215px;
+    height: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
