@@ -14,12 +14,11 @@ This is a solution to the [Stats preview card component](https://www.frontendmen
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://lucaspicinini.github.io/front-end-mentor-challenges/results-summary-component-main/index.html)
+- Live Site URL: [Add live site URL here](https://lucaspicinini.github.io/front-end-mentor-challenges/stats-preview-card-component-main/index.html)
 
 ### Screenshot
 
-![](./my-solution-screenshot.png)
+![](./my-solution-screenshot.jpg)
 
 ### Built with
 
