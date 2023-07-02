@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* Tablets and medium devices */
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* Left Card */
+
+.cardleft {
+    width: 375px;
+    height: 450px;
+    background-color: var(--card-background);
+    border-radius: 10px 0 0 10px;
+    padding-top: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardleft__title {
+    padding: 0 12px;
+    text-align: center;
+    font-size: 2.25em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: var(--main-heading-and-stats);
+}
+
+.cardleft__text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 1.8;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: var(--main-paragraph);
+}
+
+.cardleft__stats {
+    width: 375px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.cardleft__stats--num {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: var(--main-heading-and-stats);
+}
+
+.cardleft__stats--label {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: var(--stat-headings);
+}
+
+/* Right Card */
+
+.cardright {
+    width: 375px;
+    height: 450px;
+    border-radius: 0 10px 10px 0;
+    background: url("../images/image-header-desktop.jpg") no-repeat;
+    background-size: cover;
+}
+
+/* Smartphones and small devices */
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-background);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    
+    /* Left Card */
+    
+    .cardleft {
+        width: 375px;
+        height: 360px;
+        background-color: var(--card-background);
+        border-radius: 10px 10px 0 0;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    /* Right Card */
+
+    .cardright {
+        width: 375px;
+        height: 450px;
+        border-radius: 0 0 10px 10px;
+        background: url("../images/image-header-desktop.jpg") no-repeat;
+        background-size: cover;
+    }
+}
