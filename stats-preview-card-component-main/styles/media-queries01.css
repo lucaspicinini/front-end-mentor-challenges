@@ -74,7 +74,7 @@
     width: 375px;
     height: 450px;
     border-radius: 0 10px 10px 0;
-    background: url("../images/image-header-desktop.jpg") no-repeat;
+    background: url("../images/image-header-desktop.jpg") no-repeat center center;
     background-size: cover;
 }
 
