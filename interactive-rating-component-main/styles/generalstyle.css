@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS Reset */
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables */
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-orange: #fb7413;
+    --clr-light-grey: hsl(217, 12%, 63%);
+    --clr-medium-grey: hsl(216, 12%, 54%);
+    --clr-dark-blue: hsl(213, 19%, 18%);
+    --clr-very-dark-blue: hsl(216, 12%, 8%);
+    --clr-font-primary: 'Overpass', sans-serif;
+}
+
+/* General Config. */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    list-style-type: none;
+    font-family: var(--clr-font-primary);
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+
+.card {
+    max-width: 420px;
+    height: 420px;
+    padding: 0 35px;
+    background: var(--clr-dark-blue);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Card Icon */
+
+.card__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--clr-medium-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__icon--img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Card Content */
+
+.card__top {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.card__top--title {
+    color: var(--clr-white);
+    margin: .6em 0;
+    font-size: 1.8em;
+}
+
+.card__top--text {
+    color: var(--clr-light-grey);
+}
+
+/* Card Bottom Part */
+
+.card__bottom {
+    width: 350px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card__bottom--submit {
+    width: 345px;
+    height: 50px;
+    border: none;
+    font-size: 1.6em;
+    font-family: var(--clr-font-primary);
+    font-weight: 400;
+    font-variant: small-caps;
+    color: var(--clr-white);
+    background: var(--clr-orange);
+    border-radius: 40px;
+}
