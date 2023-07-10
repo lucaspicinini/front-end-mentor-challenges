@@ -21,7 +21,9 @@
     --clr-light-grey: #959eac;
     --clr-medium-grey: #2e3a44;
     --clr-dark-blue: #252d37;
+    --clr-blue-gradient: #1b222b;
     --clr-very-dark-blue: #121417;
+    --clr-text-shadow: #00000026;
     --clr-font-primary: 'Overpass', sans-serif;
 }
 
@@ -53,7 +55,7 @@ body {
     max-width: 420px;
     height: 420px;
     padding: 15px 35px;
-    background: var(--clr-dark-blue);
+    background-image: linear-gradient(to bottom left, var(--clr-dark-blue), var(--clr-blue-gradient));
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -85,6 +87,7 @@ body {
 }
 
 .card__top--title {
+    text-shadow: .5px .5px 5px var(--clr-text-shadow);
     color: var(--clr-white);
     margin: 0 0 .6em 0;
     font-size: 1.8em;
@@ -92,6 +95,7 @@ body {
 
 .card__top--text {
     color: var(--clr-light-grey);
+    text-shadow: .5px .5px 5px var(--clr-text-shadow);
 }
 
 /* Card Bottom Part */
@@ -115,9 +119,7 @@ body {
     height: 50px;
     border: none;
     border-radius: 50%;
-    font-family: var(--clr-font-primary);
-    font-size: 1em;
-    font-weight: 600;
+    font: 600 1em var(--clr-font-primary);
     color: var(--clr-light-grey);
     background: var(--clr-medium-grey);
     display: flex;
@@ -129,11 +131,11 @@ body {
     width: 345px;
     height: 45px;
     border: none;
-    font-size: 1.4em;
-    font-family: var(--clr-font-primary);
-    font-weight: 400;
-    font-variant: small-caps;
-    color: var(--clr-white);
     background: var(--clr-orange);
     border-radius: 40px;
+    font: 500 1.4em var(--clr-font-primary);
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: var(--clr-white);
+    text-shadow: .5px .5px 5px var(--clr-text-shadow);
 }
