@@ -1,23 +1,8 @@
-const button = document.querySelectorAll('.card__bottom--numbers')
+const buttons = document.querySelectorAll('.card__numbers');
 
-function changeButton(){
-    button.forEach(
-        function(choice){
-            if(choice.className == 'card__bottom--numbers') {
-                choice.className = 'card__bottom--numbers-active'
-            }
-        }
-    );
-}
-
-
- 
-
-
-
-
-
-
-
-
-
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove(`card__numbersactive`));
+      button.classList.add(`card__numbersactive`);
+    });
+  });

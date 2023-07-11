@@ -108,13 +108,13 @@ body {
     justify-content: space-between;
 }
 
-.card__bottom--choice {
+.card__choice {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.card__bottom--numbers {
+.card__numbers {
     width: 50px;
     height: 50px;
     border: none;
@@ -128,12 +128,7 @@ body {
     cursor: pointer;
 }
 
-.card__bottom--numbers:hover {
-    background: var(--clr-orange);
-    color: var(--clr-white);
-}
-
-.card__bottom--numbers-active {
+.card__numbersactive {
     width: 50px;
     height: 50px;
     border: none;
@@ -147,12 +142,17 @@ body {
     cursor: pointer;
 }
 
-.card__bottom--numbers:active {
+.card__numbers:active {
     background: var(--clr-light-grey);
     color: var(--clr-white);
 }
 
-.card__bottom--submit {
+.card__numbers:hover {
+    background: var(--clr-orange);
+    color: var(--clr-white);
+}
+
+.card__submit {
     max-width: 345px;
     height: 45px;
     border: none;
@@ -166,7 +166,7 @@ body {
     cursor: pointer;
 }
 
-.card__bottom--submit:active {
+.card__submit:active {
     background: var(--clr-white);
     color: var(--clr-orange);
 }
