@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.card {
+  max-width: 375px;
+  height: 100%;
+  border-radius: 0;
+}
