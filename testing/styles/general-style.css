@@ -170,3 +170,66 @@ body {
     background: var(--clr-white);
     color: var(--clr-orange);
 }
+
+/* Card 2 */
+
+.card2 {
+    max-width: 420px;
+    height: 420px;
+    padding: 10px 35px 0;
+    background-image: linear-gradient(to bottom left, var(--clr-dark-blue), var(--clr-blue-gradient));
+    border-radius: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Card Icon */
+
+.card2__icon {
+    margin: 0 auto;
+}
+
+/* Card Message */
+
+.card2__message {
+    width: 195px;
+    height: 25px;
+    background: var(--clr-medium-grey);
+    padding: 16px 0 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2__message--text {
+    font-size: .9em;
+    font-weight: 400;
+    color: var(--clr-orange);    
+}
+
+/* Card Bottom Part */
+
+.card2__bottom {
+    max-width: 350px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card2__bottom--title {
+    text-shadow: .5px .5px 5px var(--clr-text-shadow);
+    color: var(--clr-white);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.card2__bottom--text {
+    color: var(--clr-light-grey);
+    font-size: .95em;
+    text-align: center;
+    text-shadow: .5px .5px 5px var(--clr-text-shadow);
+}
