@@ -1,5 +1,5 @@
 const _elements = {
-    buttons: document.querySelectorAll(".card__choice"),
+    buttons: document.querySelectorAll(".card__numbers"),
     submitbtn: document.querySelector(".card__submit"),
     span: document.getElementById("rating"),
     card1: document.querySelector(".card"),
@@ -8,12 +8,14 @@ const _elements = {
 
 _elements.buttons.forEach(button => {
     button.addEventListener("click", e => {
+        const all = _elements.buttons;
+        all.forEach(btn => {
+            btn.classList.remove("card__numbersactive")
+        });
         const btn = e.target;
         btn.classList.add("card__numbersactive");
     });
 });
-
-
 
 
 
