@@ -23,11 +23,18 @@ _elements.submitbtn.addEventListener("click", sub => {
     for (i = 0; i < nums.length; i++) {
         if (nums[i].classList.contains("card__numbersactive") === true) {
             c += 1;
-        } else if (c === 1){
-            _elements.card1.style.display = "none";
-            _elements.card2.style.display = "flex";
-        } else if (c === 0) {
-            window.alert("Please, select an option.")
         };
     };
+    if (c === 1) {
+        _elements.card1.style.display = "none";
+        _elements.card2.style.display = "flex";
+    } else {
+        window.alert("Please, select an option.")
+    };
 });
+
+/*
+if (_elements.card2.style.display === "flex") {
+    _elements.span.textContent = "";          
+}*/
+
