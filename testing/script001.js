@@ -36,7 +36,13 @@ _elements.submitbtn.addEventListener("click", () => {
 });
 
 /*
-if (_elements.card2.style.display === "flex") {
-    _elements.span.textContent = "";          
-}*/
+_elements.buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        _elements.buttons.forEach(btn => {
+            btn.classList.remove("card__numbersactive")
+        });
+        button.classList.add("card__numbersactive");
+    });
+});          
+*/
 
