@@ -12,8 +12,8 @@ This is a solution to the [Interactive rating component](https://www.frontendmen
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-component-using-css-and-javascript-aY7bAfT3Fr)
-- Live Site URL: [Add live site URL here](https://lucaspicinini.github.io/front-end-mentor-challenges/stats-preview-card-component-main/index.html)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-component-using-css-and-javascript-aY7bAfT3Fr)
+- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/stats-preview-card-component-main/index.html)
 
 ### Built with
 
