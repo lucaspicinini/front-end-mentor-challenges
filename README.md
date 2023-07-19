@@ -1,8 +1,6 @@
-# Challenges From Frontend Mentor
+# Challenges From Frontend Mentor 
 
-- [Frontend Mentor](https://www.frontendmentor.io/profile/lucaspicinini)
-
-- Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+- [Frontend Mentor](https://www.frontendmentor.io/profile/lucaspicinini) challenges help you improve your coding skills by building realistic projects. 
 
 ### Live Sites
 
