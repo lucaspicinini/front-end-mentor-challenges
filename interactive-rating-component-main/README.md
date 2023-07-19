@@ -13,7 +13,7 @@ This is a solution to the [Interactive rating component](https://www.frontendmen
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-component-using-css-and-javascript-aY7bAfT3Fr)
-- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/stats-preview-card-component-main/index.html)
+- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/interactive-rating-component-main/)
 
 ### Built with
 
