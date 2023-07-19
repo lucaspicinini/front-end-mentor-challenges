@@ -10,7 +10,7 @@
 
 - [Results Summary Component Main](https://lucaspicinini.github.io/front-end-mentor-challenges/results-summary-component-main/)
 
-![](./results-summary-component-main/my-solution-screenshot.jpg)
+![](./results-summary-component-main/my-solution-screenshot.png)
 
 - [Stats Preview Card Component Main](https://lucaspicinini.github.io/front-end-mentor-challenges/stats-preview-card-component-main/)
 
