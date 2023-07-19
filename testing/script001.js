@@ -3,15 +3,21 @@ const _elements = {
     submitbtn: document.querySelector(".card__submit"),
     span: document.getElementById("rating"),
     card1: document.querySelector(".card"),
-    card2: document.querySelector(".card2")
+    card2: document.querySelector(".card2"),
 };
 
 _elements.buttons.forEach(button => {
     button.addEventListener("click", () => {
-        _elements.buttons.forEach(btn => {
-            btn.classList.remove("card__numbersactive")
-        });
-        button.classList.add("card__numbersactive");
+        if (button.classList.contains("card__numbersactive") === true) {
+            _elements.buttons.forEach(btn => {
+                btn.classList.remove("card__numbersactive");
+            });
+        } else {
+            _elements.buttons.forEach(btn => {
+                btn.classList.remove("card__numbersactive");
+            });
+            button.classList.add("card__numbersactive");
+        };
     });
 });
 
@@ -31,18 +37,6 @@ _elements.submitbtn.addEventListener("click", () => {
         _elements.card2.style.display = "flex";
         span.innerHTML = buttonId;
     } else {
-        window.alert("Please, select an option.")
+        window.alert("Please, select an option.");
     };
 });
-
-/*
-_elements.buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        _elements.buttons.forEach(btn => {
-            btn.classList.remove("card__numbersactive")
-        });
-        button.classList.add("card__numbersactive");
-    });
-});          
-*/
-
