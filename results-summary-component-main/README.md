@@ -10,7 +10,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ### The challenge
@@ -22,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-page-using-bem-with-css-flexbox-and-media-query-03fRj3eKad)
-- Live Site URL: [Add live site URL here](https://lucaspicinini.github.io/front-end-mentor-challenges/results-summary-component-main/index.html)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-page-using-bem-with-css-flexbox-and-media-query-03fRj3eKad)
+- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/results-summary-component-main/index.html)
 
 ### Screenshot
 
@@ -43,13 +42,6 @@ I started learning web development just 1 month ago, so keep in mind that I'm qu
 ### Continued development
 
 I intend to train the markup languages until I feel minimally confident in doing something by myself and then I'll start learning JavaScript. I'm Brazilian and I've always been passionate about computing, but I only had access to the internet at friends or relatives' houses, I only had the opportunity to have my own computer and time to learn coding this year. I'm 31 years old and now I can finally follow this dream of working with programming.
-
-### Useful resources
-
-I am self-taught and I learn most things through W3Schools or freecodecamp.org
-
-- [W3Schools](https://www.w3schools.com/)
-- [freecodecamp.org](https://www.freecodecamp.org/)
 
 ## Author
 

@@ -5,6 +5,7 @@ This is a solution to the [Interactive rating component](https://www.frontendmen
 ## Table of contents
 
   - [Links](#links)
+  - [Screenshot](#screenshot)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -14,6 +15,10 @@ This is a solution to the [Interactive rating component](https://www.frontendmen
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-component-using-css-and-javascript-aY7bAfT3Fr)
 - Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/interactive-rating-component-main/)
+
+### Screenshot
+
+![](./my-solution-screenshot.jpg)
 
 ### Built with
 
