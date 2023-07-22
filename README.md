@@ -4,6 +4,10 @@
 
 ### Live Sites
 
+- [Article Preview Component Master](https://lucaspicinini.github.io/front-end-mentor-challenges/article-preview-component-master/)
+
+![](./article-preview-component-master/my-solution-screenshot.jpg)
+
 - [Interactive Rating Component Main](https://lucaspicinini.github.io/front-end-mentor-challenges/interactive-rating-component-main/)
 
 ![](./interactive-rating-component-main/my-solution-screenshot.jpg)
