@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/**********************************/
+/* 0. Variables
+/* 1. General Styles
+/* 2. Card-Container
+/* 3. Card
+/* 4. Card-Image
+/* 5. Card-Info
+/* 6. Card-Info__Title
+/* 7. Card-Info__Text
+/* 8. Card-Footer
+/* 9. Share-Card
+/*10. Medium-Devices-Media-Query
+/*11. Small-Devices-Media-Query
+/**********************************/
+
+/**********************************/
+/* 0. Variables
+/**********************************/
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --dark-grayish-blue: #48556a;
+    --desaturated-dark-blue: #6d7f97;
+    --grayish-blue: #9eafc2;
+    --light-grayish-blue: #ecf2f8;
+    --shadow: #00000024;
+    --font-primary: 'Manrope', sans-serif;
+}
+
+/**********************************/
+/* 1. General Styles
+/**********************************/
+
+html {
+    width: 100vw;
+    height: 100vh;
+	font-size: 13px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-primary);
+}
+
+/**********************************/
+/* 2. Card-Container
+/**********************************/
+
+.card-container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************/
+/* 3. Card
+/**********************************/
+
+.card {
+    width: 735px;
+    height: 285px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 5px 10px 20px var(--shadow);
+}
+
+/**********************************/
+/* 4. Card-Image
+/**********************************/
+
+.card-image {
+    width: 291px;
+    height: 285px;
+    background: url("../images/drawers.jpg") no-repeat left center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+/**********************************/
+/* 5. Card-Info
+/**********************************/
+
+.card-info {
+    width: 444px;
+    height: 285px;
+    background: var(--white);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 40px 0;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+/**********************************/
+/* 6. Card-Info__Title
+/**********************************/
+
+.card-info__title {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--dark-grayish-blue);
+}
+
+/**********************************/
+/* 7. Card-Info__Text
+/**********************************/
+
+.card-info__text {
+    font-weight: 500;
+    color: var(--desaturated-dark-blue);
+}
+
+/**********************************/
+/* 8. Card-Footer
+/**********************************/
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-footer__img {
+    width: 42px;
+    height: 42px;
+    background: url("../images/avatar-michelle.jpg") no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.card-footer__info {
+    padding-left: 15px;
+    flex: 1;
+}
+
+.card-footer__info > p:nth-child(1) {
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+}
+
+.card-footer__info > p:nth-child(2) {
+    font-weight: 500;
+    color: var(--grayish-blue);
+    margin-top: 3px;
+}
+
+.card-footer__ico-container {
+    width: 32px;
+    height: 32px;
+    background: var(--light-grayish-blue);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-footer__ico-container--active {
+    width: 32px;
+    height: 32px;
+    background: var(--dark-grayish-blue);
+    opacity: .8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-footer__ico {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url("../images/icon-share.svg") no-repeat center center;
+    background-size: auto;
+}
+
+.card-footer__ico--active {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url("../images/icon-share-active.svg") no-repeat center center;
+    background-size: auto;
+}
+
+/**********************************/
+/* 9. Share-Card
+/**********************************/
+
+.share-card {
+    position: absolute;
+    bottom: 85px;
+    right: -70px;
+    display: none;
+}
+
+.share-card__bubble {
+    width: 250px;
+    height: 55px;
+    border-radius: 10px;
+    background: var(--dark-grayish-blue);
+    padding: 0 35px;
+    box-shadow: 0 20px 30px var(--shadow);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.share-card__bubble > p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--grayish-blue);
+}
+
+.share-card__bubble a {
+    width: 20px;
+    height: 20px;
+}
+
+.share-card__bubble > a:nth-child(3) {
+    width: 20px;
+    height: 17px;
+}
+
+.share-card__pointer {
+    width: 20px;
+	height: 20px;
+	background: var(--dark-grayish-blue);
+	margin: -10px auto 0;
+	transform: rotate(45deg);
+}
+
+/**********************************/
+/* 10. Medium-Devices-Media-Query
+/**********************************/
+
+@media screen and (max-width: 900px) {
+
+    .card {
+        width: 500px;
+        height: auto;
+        flex-flow: column wrap;
+        box-shadow: 0 0;
+    }
+
+    .card-image {
+        width: 500px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-info__title {
+        font-size: 1.85rem;
+    }
+
+    .card-info {
+        width: 500px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-footer__info {
+        padding-left: 0;
+        flex: none;
+    }
+
+}
+
+/**********************************/
+/* 11. Small-Devices-Media-Query
+/**********************************/
+
+@media screen and (max-width: 700px) {
+
+    .card-container {
+        width: 100vw;
+        height: 100vh;
+        background: var(--light-grayish-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 330px;
+        height: 510px;
+        border-radius: 10px;
+        display: flex;
+        box-shadow: 5px 10px 20px var(--shadow);
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .card-image {
+        width: 330px;
+        height: 195px;
+    }
+
+    .card-info {
+        width: 330px;
+        height: 315px;
+        padding: 0 30px;
+    }
+
+    .card-info__title {
+        font-size: 1.32rem;
+    }
+
+    .card-info__text {
+        font-size: 1.05rem;
+        margin-top: -20px;
+    }
+
+    .card-footer {
+        margin-bottom: -15px;
+    }
+
+    .card-footer__info {
+        padding-left: 15px;
+        flex: 1;
+    }
+
+    .card-footer__ico-container {
+        position: relative;
+        top: 14px;
+        z-index: 1;
+    }
+
+    .card-footer__ico-container--active {
+        background: var(--desaturated-dark-blue);
+    }
+
+    .share-card {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: none;
+    }
+    
+    .share-card__bubble {
+        width: 330px;
+        height: 65px;
+        border-radius: 0 0 10px 10px;
+        padding: 0 35px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .share-card__bubble > p {
+        margin-right: 20px;
+    }
+
+    .share-card__bubble a {
+        margin-right: 15px;
+    }
+   
+    .share-card__pointer {
+        display: none;
+    }
+
+}
