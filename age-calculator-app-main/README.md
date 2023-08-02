@@ -31,7 +31,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/article-preview-component-master-html-css-and-javascript-O9RECo-9C1)
-- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/article-preview-component-master/)
+- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/age-calculator-app-main/index.html)
 
 ### Screenshot
 
