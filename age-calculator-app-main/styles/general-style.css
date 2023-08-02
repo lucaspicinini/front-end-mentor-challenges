@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/**********************************/
+/* 0. Variables
+/* 1. General-Config
+/* 2. Container
+/* 3. Card
+/* 4. Card-Data
+/* 5. Horizontal-Row and Button
+/* 6. Card-Age
+/* 7. Small Devices Media-Query
+/**********************************/
+
+/**********************************/
+/* 0. Variables
+/**********************************/
+
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --white: #ffffff;
+    --off-white: #f0f0f0;
+    --light-grey: #dbdbdb;
+    --smokey-grey: #716f6f;
+    --off-black: #141414;
+    --purple: #854dff;
+    --light-red: #ff5757;
+}
+
+/**********************************/
+/* 1. General-Config
+/**********************************/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-primary);
+}
+
+/**********************************/
+/* 2. Container
+/**********************************/
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************/
+/* 3. Card
+/**********************************/
+
+.card {
+    width: 545px;
+    height: 425px;
+    background: var(--white);
+    border-radius: 15px 15px 140px 15px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+/**********************************/
+/* 4. Card-Data
+/**********************************/
+
+.card-data {
+    width: 360px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.card-data__label {
+    width: 100px;
+    height: 20px;
+    margin-right: 20px;
+    color: var(--smokey-grey);
+    font-weight: 400;
+    font-size: .6rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.card-data__label--error {
+    color: var(--light-red);
+}
+
+.card-data__input {
+    width: 100px;
+    height: 45px;
+    margin-right: 20px;
+    color: var(--off-black);
+    font-family: var(--font-primary);
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 5px;
+    border: .1px solid var(--light-grey);
+    padding-left: 15px;
+}
+
+.card-data__input--error {
+    border: .1px solid var(--light-red);
+}
+
+.card-data__input:hover {
+    cursor: pointer;
+}
+
+.card-data__input:focus {
+    outline: .1px outset var(--purple);
+    cursor: pointer;
+}
+
+.card-data__alert {
+    width: 100px;
+    margin-right: 20px;
+    padding-top: .2rem;
+    font-size: .55rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--light-red);
+}
+
+/**********************************/
+/* 5. Horizontal-Row and Button
+/**********************************/
+
+.card-button-container {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    width: 400px;
+    min-height: .1px;
+    background: var(--smokey-grey);
+    display: inline-block;
+    opacity: .2;
+}
+
+.card-button {
+    background: var(--purple);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-button:active {
+    background: var(--off-black);
+}
+
+.card-button__img {
+    width: 30px;
+}
+
+/**********************************/
+/* 6. Card-Age
+/**********************************/
+
+.card-age__date {
+    line-height: 4.5rem;
+    font-size: 4.2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--off-black);
+}
+
+.card-age__result {
+    color: var(--purple);
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: .8rem;
+}
+
+/**********************************/
+/* 7. Small Devices Media-Query
+/**********************************/
+
+@media screen and (max-width: 520px) {
+
+    .card {
+        width: 345px;
+        height: 490px;
+        border-radius: 15px 15px 100px 15px;
+        padding-top: 50px;
+        padding-left: 0;
+    } 
+
+    .card-data-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-data {
+        width: 285px;
+    }
+
+    .card-data__label {
+        width: 85px;
+        height: 20px;
+        margin-right: 15px;
+        font-size: .7rem;
+        letter-spacing: .2rem;
+    }
+
+    .card-data__label:last-of-type {
+        margin-right: 0;
+    }
+
+    .card-data__input {
+        width: 85px;
+        height: 50px;
+        margin-right: 15px;
+        border-radius: 8px;
+    }
+
+    .card-data__input:last-of-type {
+        margin-right: 0;
+    }
+
+    .card-data__alert {
+        width: 85px;
+        margin-right: 15px;
+        padding-top: 0.2rem;
+        font-size: .55rem;
+        font-weight: 400;
+    }
+
+    .card-data__alert:last-of-type {
+        margin-right: 0;
+    }
+
+    .card-button-container {
+        width: 285px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    hr {
+        width: 285px;
+        min-height: 3px;
+        opacity: .1;
+        position: absolute;
+    }
+
+    .card-button {
+        z-index: 1;
+    }
+
+    .card-age {
+        margin-top: 40px;
+        padding-left: 30px;
+        display: inline-block;
+    }
+
+    .card-age__date {
+        line-height: 3.6rem;
+        font-size: 3.2rem;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+
+    .card-age__date {
+        font-size: 2.6rem;
+    }
+
+}

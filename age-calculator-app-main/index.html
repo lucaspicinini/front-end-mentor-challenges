@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/general-style.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+
+  <main class="container">
+    <section class="card">
+
+      <form action="" class="card-data-wrapper">
+        <div class="card-data">
+
+          <label for="data-day" class="card-data__label" id="label-day">Day</label>
+          <label for="data-month" class="card-data__label" id="label-month">Month</label>
+          <label for="data-year" class="card-data__label" id="label-year">Year</label>
+
+          <input class="card-data__input" type="number" name="data" id="data-day" placeholder="DD">
+          <input class="card-data__input" type="number" name="data" id="data-month" placeholder="MM">
+          <input class="card-data__input" type="number" name="data" id="data-year" placeholder="YYYY">
+
+          <span class="card-data__alert" id="alert-day"></span>
+          <span class="card-data__alert" id="alert-month"></span>
+          <span class="card-data__alert" id="alert-year"></span>
+
+        </div>
+
+        <div class="card-button-container">
+
+          <hr>
+
+          <button type="button" class="card-button">
+            <img src="assets/images/icon-arrow.svg" alt="arrow icon" class="card-button__img">
+          </button>
+
+        </div>
+      </form>
+
+      <div class="card-age">
+        <p class="card-age__date"><span class="card-age__result" id="age-year">--</span>years</p>
+
+        <p class="card-age__date"><span class="card-age__result" id="age-month">--</span>months</p>
+
+        <p class="card-age__date"><span class="card-age__result" id="age-day">--</span>days</p>
+      </div>
+
+    </section>
+  </main>
+  <script src="app/script.js"></script>
+</body>
+</html>
