@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/general-style.css">
+  <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <main>
+    <section class="card">
+
+      <div class="info">
+        <h1 class="info__title">Stay updated!</h1>
+        <p class="info__text">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="info__list">
+          <li class="info__list-item">Product discovery and building what matters</li>
+          <li class="info__list-item">Measuring to ensure updates are a success</li>
+          <li class="info__list-item">And much more!</li>
+        </ul>
+        <form class="form" action="action.php" method="post">
+          <div class="form__label-wrapper">
+            <label class="form__label" for="user">Email address</label>
+            <span class="form__label-fail">Valid email required</span>
+          </div>
+          <input class="form__input " type="email" name="email" id="user" placeholder="email@company.com">
+          <input class="form__button" type="button" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+
+      <div class="img-wrapper">
+        <img class="img-wrapper__content" src="assets/images/illustration-sign-up-desktop.svg" alt="Desktop Illustration">
+      </div>
+
+    </section>
+
+    <section class="success-card">
+      <div class="success-card__v-mark">
+        <!-- img via CSS -->
+      </div>
+      <h1 class="success-card__title">Thanks for subscribing!</h1>
+      <p class="success-card__text">A confirmation email has been sent to <span class="success-card__mail">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button type="button" class="success-card__button">Dismiss message</button>
+
+    </section>
+
+  </main>
+  <!-- Sign-up form end -->
+  <script src="./app/app.js"></script>
+</body>
+</html>
