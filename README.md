@@ -4,6 +4,10 @@
 
 ### Live Sites
 
+- [Newsletter Sign Up ](https://lucaspicinini.github.io/front-end-mentor-challenges/newsletter-sign-up-with-success-message-main/)
+
+![](./newsletter-sign-up-with-success-message-main/my-solution-screenshot.jpg)
+
 - [Age calculator app](https://lucaspicinini.github.io/front-end-mentor-challenges/age-calculator-app-main/)
 
 ![](./age-calculator-app-main/my-solution-screenshot.jpg)
