@@ -8,7 +8,6 @@ function randomAdvice() {
 
   slip.getBody().then((apiObject) => {
 
-    console.log(apiObject)
     id.innerHTML = `Advice #${apiObject.id}`
     advice.innerHTML = `&#8220${apiObject.advice}&#8221`
 
