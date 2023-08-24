@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/**********************************/
+/* 0. Variables
+/* 1. General-Config
+/* 2. Card
+/**********************************/
+
+/**********************************/
+/* 0. Variables
+/**********************************/
+
+:root {
+    --font-primary: 'Manrope', sans-serif;
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-cyan: #cee3e9;
+    --neon-green: #52ffa8;
+    --grayish-blue: #4e5d73;
+    --dark-grayish-blue: #323a49;
+    --dark-blue: #1f2632;
+}
+
+/**********************************/
+/* 1. General-Config
+/**********************************/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-primary);
+    font-weight: 800;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Font size (quote): 28px*/
+
+/**********************************/
+/* 2. Card
+/**********************************/
+
+.card {
+    width: 545px;
+    height: 335px;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 15px;
+    padding: 0 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card__title {
+    font-variant-caps: all-small-caps;
+    letter-spacing: .3rem;
+    font-size: 1.15rem;
+    color: var(--neon-green);
+    margin-bottom: 20px;
+}
+
+.card__advice {
+    height: 150px;
+    color: var(--light-cyan);
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.card__button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -32.5px;
+    cursor: pointer;
+}
