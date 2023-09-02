@@ -87,6 +87,12 @@ body {
     text-align: center;
 }
 
+.row-wrapper {
+    height: 16px;
+    width: 444px;
+    background-image: url('../images/pattern-divider-desktop.svg');
+}
+
 .card__button {
     width: 65px;
     height: 65px;
@@ -99,4 +105,24 @@ body {
     position: absolute;
     bottom: -32.5px;
     cursor: pointer;
+}
+
+.card__button:hover {
+    box-shadow: 0px 0px 15px var(--neon-green);
+}
+
+@media screen and (max-width: 555px) {
+    .card {
+        width: 350px;
+        height: 75vh;
+    }
+
+    .card__advice {
+        margin-bottom: 140px;
+    }
+
+    .row-wrapper {
+        width: 295px;
+        background-image: url('../images/pattern-divider-mobile.svg');
+    }
 }
