@@ -4,7 +4,11 @@
 
 ### Live Sites
 
-- [Newsletter Sign Up ](https://lucaspicinini.github.io/front-end-mentor-challenges/newsletter-sign-up-with-success-message-main/)
+- [Advice Generator App](https://lucaspicinini.github.io/front-end-mentor-challenges/advice-generator-app-main/)
+
+![](./advice-generator-app-main/my-solution-screenshot.jpg)
+
+- [Newsletter Sign Up](https://lucaspicinini.github.io/front-end-mentor-challenges/newsletter-sign-up-with-success-message-main/)
 
 ![](./newsletter-sign-up-with-success-message-main/my-solution-screenshot.jpg)
 
