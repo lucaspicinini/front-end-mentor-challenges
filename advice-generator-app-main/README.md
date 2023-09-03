@@ -24,7 +24,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/age-calc-app-with-css-and-js-JZAh0urWYe)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/using-an-api-for-the-first-time-pWrtqCH3ti)
 - Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/advice-generator-app-main)
 
 ### Screenshot
