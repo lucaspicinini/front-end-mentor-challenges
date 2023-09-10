@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/**********************************/
+/* 0. Variables
+/* 1. General-Config
+/* 2. Main
+/* 3. Header
+/* 4. Notifications
+/* 5. User-configs
+/**********************************/
+
+/**********************************/
+/* 0. Variables
+/**********************************/
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --red: #f65351;
+    --blue: #0a317b;
+    --very-light-grayish-blue: #f7fafd;
+    --light-grayish-blue-01: #e5effa;
+    --light-grayish-blue-02: #dde7ee;
+    --grayish-blue: #939dae;
+    --dark-grayish-blue: #5e6778;
+    --very-dark-blue: #1c202b;
+
+    --primary-font: 'Plus Jakarta Sans', sans-serif;
+}
+
+/**********************************/
+/* 1. General-Config
+/**********************************/
+
+/* Font Weights: 500, 800 */
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+body {
+    background: var(--very-light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************/
+/* 2. Main
+/**********************************/
+
+.main-block {
+    max-width: 455px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.025);
+    padding: 25px 18px 10px;
+    display: grid;
+    align-content: space-between;
+    gap: 6px;
+}
+
+/**********************************/
+/* 3. Header
+/**********************************/
+
+.block-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+.block-header__notifications {
+    display: flex;
+    align-items: center;
+}
+
+.block-header__notifications-text {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.block-header__notifications-number {
+    width: 20px;
+    height: 16px;
+    border-radius: 3px;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    display: inline-flex;
+    font-size: .7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-header__markall {
+    color: var(--dark-grayish-blue);
+    align-self: center;
+    cursor: pointer;
+}
+
+/**********************************/
+/* 4. Notifications
+/**********************************/
+
+.block-notifications__type01 {
+    padding: 0.85rem;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.block-notifications__type01:nth-child(5) {
+    padding: 0.85rem;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.block-notifications--notread {
+    background: var(--light-grayish-blue-01);
+}
+
+.block-notifications--read {
+    background: none;
+}
+
+.block-notifications__type02-c {
+    margin-top: 0.8rem;
+    padding-left: 2.8rem;
+}
+
+.block-notifications__type02 {
+    color: var(--dark-grayish-blue);
+    max-width: 350px;
+    height: auto;
+    padding: .85rem;
+    border-radius: 3px;
+    border: .5px solid var(--light-grayish-blue-02);
+    margin-bottom: 10px;
+}
+
+.block-notifications__type02:hover {
+    background: var(--light-grayish-blue-01);
+    border: .5px solid var(--light-grayish-blue-01);
+}
+
+/**********************************/
+/* 5. User-configs
+/**********************************/
+
+.user-img-01 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-mark-webber.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-02 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-angela-gray.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-03 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-jacob-thompson.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-04 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-rizky-hasanuddin.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-05 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-kimberly-smith.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-06 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-nathan-peterson.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-07 {
+    min-width: 2.063rem;
+    min-height: 2.063rem;
+    background-image: url('../assets/images/avatar-anna-kim.webp');
+    background-size: contain;
+    margin-right: 0.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.user-img-08 {
+    width: 2.063rem;;
+    height: 2.063rem;
+    background-image: url('../assets/images/image-chess.webp');
+    background-size: contain;
+    background-position: right;
+    flex-grow: 2;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.user-name {
+    font-weight: 800;
+    margin-right: 0.313rem;
+}
+
+.user-action {
+    color: var(--dark-grayish-blue);
+    margin-right: 0.313rem;
+}
+
+.red-mark {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin-left: 0.2rem;
+}
+
+.user-post,
+.user-group {
+    font-weight: 800;
+    color: var(--dark-grayish-blue);
+}
+
+.user-date {
+    color: var(--grayish-blue);
+}
+
+.user-name:hover,
+.user-post:hover,
+.user-group:hover,
+.block-header__markall:hover {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 450px) {
+
+    body {
+        align-items: flex-start;
+        background: var(--white);
+    }
+
+    .main-block {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+    }
+
+}

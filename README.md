@@ -4,6 +4,10 @@
 
 ### Live Sites
 
+- [Notifications Page Main](https://lucaspicinini.github.io/front-end-mentor-challenges/notifications-page-main/)
+
+![](./advice-generator-app-main/my-solution-screenshot.jpg)
+
 - [Advice Generator App](https://lucaspicinini.github.io/front-end-mentor-challenges/advice-generator-app-main/)
 
 ![](./advice-generator-app-main/my-solution-screenshot.jpg)
