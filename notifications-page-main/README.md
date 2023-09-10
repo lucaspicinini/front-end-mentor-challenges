@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-with-css-and-js-lHjp4Dqxe8)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/notification-page-with-css-and-js-VuCakYwKfb)
 - Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/notifications-page-main/)
 
 ### Screenshot
