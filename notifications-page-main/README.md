@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-with-css-and-js-lHjp4Dqxe8)
-- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/newsletter-sign-up-with-success-message-main/)
+- Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/notifications-page-main/)
 
 ### Screenshot
 
