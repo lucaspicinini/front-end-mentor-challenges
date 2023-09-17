@@ -4,6 +4,10 @@
 
 ### Live Sites
 
+- [Notifications Page Main](https://lucaspicinini.github.io/front-end-mentor-challenges/tip-calculator-app-main/)
+
+![](./tip-calculator-app-main/my-solution-screenshot.jpg)
+
 - [Notifications Page Main](https://lucaspicinini.github.io/front-end-mentor-challenges/notifications-page-main/)
 
 ![](./notifications-page-main/my-solution-screenshot.jpg)

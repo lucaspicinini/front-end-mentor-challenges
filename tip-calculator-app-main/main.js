@@ -105,13 +105,6 @@ function changeColor(tip) {
     }
 }
 
-// function changeInput(input, box){
-//     box.classList.add('input-state--active')
-//     input.addEventListener('focusout', () => {
-//         box.classList.remove('input-state--active')
-//     })
-// }
-
 function changeInput(input, box) {
     box.style.border = "2.5px solid #9ED9D5"
 
@@ -166,5 +159,3 @@ resetBtn.addEventListener('click', () => {
     gridCustom.value = ''
     inputPeople.value = ''
 })
-
-console.dir(gridCustom)
