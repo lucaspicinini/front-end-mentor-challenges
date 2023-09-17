@@ -142,6 +142,11 @@ gridCustom.addEventListener('focus', () => {
     doAll()
 })
 
+gridCustom.addEventListener('focusout', () => {
+    gridCustom.value = ''
+    doAll()
+})
+
 gridCustom.addEventListener('input', doAll)
 
 inputPeople.addEventListener('focus', () => {
