@@ -283,6 +283,7 @@ input::-webkit-inner-spin-button {
     .card-rightside {
         height: auto;
         padding: 20px 40px 40px;
+        border-radius: 0 0 10px 10px;
     }
 
     .card-rightside-bottom__btn {
