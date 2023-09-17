@@ -113,9 +113,7 @@ function doAll() {
 
 // Listeners
 
-inputBill.addEventListener('input', () => {
-    doAll()
-})
+inputBill.addEventListener('input', doAll)
 
 gridTips.forEach((tip) => {
     tip.addEventListener('click', () => {
@@ -129,13 +127,9 @@ gridCustom.addEventListener('focus', () => {
     doAll()
 })
 
-gridCustom.addEventListener('input', () => {
-    doAll()
-})
+gridCustom.addEventListener('input', doAll)
 
-inputPeople.addEventListener('input', () => {
-    doAll()
-})
+inputPeople.addEventListener('input', doAll)
 
 resetBtn.addEventListener('click', () => {
     clearGrid()
