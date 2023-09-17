@@ -34,8 +34,15 @@ input::-webkit-inner-spin-button {
     background-color: #C5E4E7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+}
+
+#img {
+    background-color: #C5E4E7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* 2- MAIN-CARD */
