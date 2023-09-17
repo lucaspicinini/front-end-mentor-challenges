@@ -105,6 +105,22 @@ function changeColor(tip) {
     }
 }
 
+// function changeInput(input, box){
+//     box.classList.add('input-state--active')
+//     input.addEventListener('focusout', () => {
+//         box.classList.remove('input-state--active')
+//     })
+// }
+
+function changeInput(input, box) {
+    box.style.border = "2.5px solid #9ED9D5"
+
+    input.addEventListener('focusout', () => {
+    box.style.border = "none"
+    })
+
+}
+
 function doAll() {
     let total = calcTotal()
     let tipPerPeople = getTipPerPeople()
@@ -112,6 +128,11 @@ function doAll() {
 }
 
 // Listeners
+
+inputBill.addEventListener('focus', () => {
+    let billbox = document.querySelector('#billbox')
+    changeInput(inputBill, billbox)
+})
 
 inputBill.addEventListener('input', doAll)
 
@@ -124,10 +145,16 @@ gridTips.forEach((tip) => {
 
 gridCustom.addEventListener('focus', () => {
     clearGrid()
+    changeInput(gridCustom, gridCustom)
     doAll()
 })
 
 gridCustom.addEventListener('input', doAll)
+
+inputPeople.addEventListener('focus', () => {
+    let peoplebox = document.querySelector('#peoplebox')
+    changeInput(inputPeople, peoplebox)
+})
 
 inputPeople.addEventListener('input', doAll)
 
@@ -139,3 +166,5 @@ resetBtn.addEventListener('click', () => {
     gridCustom.value = ''
     inputPeople.value = ''
 })
+
+console.dir(gridCustom)
