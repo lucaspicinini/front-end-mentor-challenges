@@ -35,6 +35,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* 2- MAIN-CARD */
@@ -251,4 +252,42 @@ input::-webkit-inner-spin-button {
 .btn-state--active {
     color: #084F4C;
     background-color: #9FE8DF;
+}
+
+@media screen and (max-width: 950px) {
+
+    .card-container {
+        height: 100%;
+        align-content: flex-start;
+        background-color: #FFFFFF;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+        height: 100%;
+    }
+
+    .card-leftside {
+        padding: 20px 35px 15px;
+    }
+
+    .card-leftside-table {
+        grid-template-columns:
+        [col-1] 105px
+        [col-2] 105px
+        [col-3] 105px;
+        justify-content: center;
+    }
+
+    .card-rightside {
+        border-radius: 0 0 10px 10px;
+        height: auto;
+        padding: 20px 40px 40px;
+    }
+
+    .card-rightside-bottom__btn {
+        margin: 0;
+    }
 }
