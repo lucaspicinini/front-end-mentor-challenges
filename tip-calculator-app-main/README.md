@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/notification-page-with-css-and-js-VuCakYwKfb)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/tip-calculator-with-js-HC5OuAaGi9)
 - Live Site URL: [Live Site](https://lucaspicinini.github.io/front-end-mentor-challenges/tip-calculator-app-main/)
 
 ### Screenshot
