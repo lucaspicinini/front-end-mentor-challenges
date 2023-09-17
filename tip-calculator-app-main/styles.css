@@ -266,7 +266,6 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
         padding: 0;
         gap: 10px;
-        height: 100%;
     }
 
     .card-leftside {
@@ -282,7 +281,6 @@ input::-webkit-inner-spin-button {
     }
 
     .card-rightside {
-        border-radius: 0 0 10px 10px;
         height: auto;
         padding: 20px 40px 40px;
     }
