@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+/* _________________ */
+/* ______INDEX______ */
+/* 1- GENERAL-CONFIG */
+/* 2- MAIN-CARD_____ */
+/* 3- LEFT-CARD_____ */
+/* 4- RIGHT-CARD____ */
+
+/* 1- GENERAL-CONFIG */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #C5E4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2- MAIN-CARD */
+
+.card {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* 3- LEFT-CARD */
+
+.card-leftside {
+    width: 415px;
+    height: 415px;
+    padding: 20px 0 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-leftside-input > form:nth-child(1) {
+    color: #616b6b;
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.card-leftside-input__content {
+    background-color: #F3F8FB;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-state--active {
+    border: 2.5px solid #9ED9D5;
+}
+
+.input-state--error {
+    border: 2.5px solid #dd8b80;
+
+}
+
+#text-error {
+    float: right;
+    color: #d16557;
+    display: none;
+}
+
+.card-leftside-input__content :nth-child(2) {
+    border: none;
+    background-color: #F3F8FB;
+}
+
+.card-leftside-input__content :nth-child(2)::placeholder, :focus, :enabled {
+    outline: none;
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 700;
+}
+
+.card-leftside-input__content :nth-child(2):enabled {
+    color: #114A44;
+    font-weight: 700;
+}
+
+.card-leftside-middle > p:nth-child(1) {
+    color: #616b6b;
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.card-leftside-table {
+    display: grid;
+    grid-template-columns: [col-1] 120px
+    [col-2] 120px
+    [col-3] 120px;
+    grid-template-rows: [row-1] 50px
+    [row-2] 50px;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card-leftside-table__item {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #00474B;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    justify-self: stretch;
+    cursor: pointer;
+}
+
+.card-leftside-table__item:hover {
+    color: #084F4C;
+    background-color: #9FE8DF;
+}
+
+.table-item-state--active {
+    color: #084F4C;
+    background-color: #26C2AD;
+}
+
+.card-leftside-table__item:nth-last-child(1),
+::placeholder {
+    color: #617C79;
+    text-align: center;
+    background-color: #F3F8FB;
+    border: none;
+    cursor: text;
+}
+
+/* 4- RIGHT-CARD */
+
+.card-rightside {
+    width: 415px;
+    height: 415px;
+    padding: 58px 40px 40px;
+    border-radius: 10px;
+    background-color: #00474B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.card-rightside-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-rightside-top__text {
+    line-height: 1.5rem;
+}
+
+.card-rightside-top__text :nth-child(1) {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .92rem;
+}
+
+.card-rightside-top__text :nth-child(2) {
+    color: #4F8488;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+.card-rightside-top__value {
+    color: #2AC2AD;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-rightside-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.card-rightside-middle__text {
+    line-height: 1.5rem;
+}
+
+.card-rightside-middle__text :nth-child(1) {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .92rem;
+}
+
+.card-rightside-middle__text :nth-child(2) {
+    color: #4F8488;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+.card-rightside-middle__value {
+    color: #2AC2AD;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-rightside-bottom__btn {
+    color: #06585c;
+    font-variant: all-small-caps;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    width: 325px;
+    height: 50px;
+    margin: auto auto 0;
+    border: none;
+    border-radius: 5px;
+    background: #0D686D;
+    cursor: pointer;
+}
+
+.card-rightside-bottom__btn:hover {
+    color: #084F4C;
+    background-color: #9FE8DF;
+}
+
+.btn-state--active {
+    color: #084F4C;
+    background-color: #9FE8DF;
+}

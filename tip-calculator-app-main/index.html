@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Tip calculator app</title>
+</head>
+<body>
+
+  <main class="card-container">
+    <div class="card">
+      <section class="card-leftside">
+        <div class="card-leftside-input">
+          <form action="">
+            <label for="bill">Bill</label>
+            <div class="card-leftside-input__content" id="billbox">
+              <img src="images/icon-dollar.svg" alt="icon-person">
+              <input type="number" placeholder="0" name="bill" id="bill">
+            </div>
+          </form>
+        </div>
+
+        <div class="card-leftside-middle">
+          <p>Select Tip %</p>
+          <div class="card-leftside-table">
+            <span class="card-leftside-table__item">
+              5%
+            </span>
+            <span class="card-leftside-table__item">
+              10%
+            </span>
+            <span class="card-leftside-table__item">
+              15%
+            </span>
+            <span class="card-leftside-table__item">
+              25%
+            </span>
+            <span class="card-leftside-table__item">
+              50%
+            </span>
+            <input type="number" placeholder="Custom" class="card-leftside-table__item" id="custom">
+          </div>
+        </div>
+
+        <div class="card-leftside-input">
+          <form action="">
+            <label for="people">Number of People</label>
+            <span id="text-error">Can't be zero</span>
+            <div class="card-leftside-input__content" id="peoplebox">
+              <img src="images/icon-person.svg" alt="icon-person">
+              <input type="number" placeholder="0" name="people" id="people">
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <section class="card-rightside">
+        
+        <div class="card-rightside-top">
+          <div class="card-rightside-top__text">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="card-rightside-top__value">
+            $0.00
+          </div>
+        </div>
+
+        <div class="card-rightside-middle">
+          <div class="card-rightside-middle__text">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="card-rightside-middle__value">
+            $0.00
+          </div>
+        </div>
+
+        <button class="card-rightside-bottom__btn" type="reset">
+          Reset
+        </button>
+
+      </section>
+    </div>   
+  </main>
+  
+<script src="main.js"></script>
+</body>
+</html>
