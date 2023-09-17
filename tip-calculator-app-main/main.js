@@ -105,40 +105,36 @@ function changeColor(tip) {
     }
 }
 
-// Listeners
-
-inputBill.addEventListener('input', () => {
+function doAll() {
     let total = calcTotal()
     let tipPerPeople = getTipPerPeople()
     totalOnScreen(total, tipPerPeople)
+}
+
+// Listeners
+
+inputBill.addEventListener('input', () => {
+    doAll()
 })
 
 gridTips.forEach((tip) => {
     tip.addEventListener('click', () => {
         changeColor(tip)
-        let total = calcTotal()
-        let tipPerPeople = getTipPerPeople()
-        totalOnScreen(total, tipPerPeople)
+        doAll()
     })
 })
 
 gridCustom.addEventListener('focus', () => {
     clearGrid()
-    let total = calcTotal()
-    let tipPerPeople = getTipPerPeople()
-    totalOnScreen(total, tipPerPeople)
+    doAll()
 })
 
 gridCustom.addEventListener('input', () => {
-    let total = calcTotal()
-    let tipPerPeople = getTipPerPeople()
-    totalOnScreen(total, tipPerPeople)
+    doAll()
 })
 
 inputPeople.addEventListener('input', () => {
-    let total = calcTotal()
-    let tipPerPeople = getTipPerPeople()
-    totalOnScreen(total, tipPerPeople)
+    doAll()
 })
 
 resetBtn.addEventListener('click', () => {
