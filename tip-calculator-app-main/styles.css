@@ -258,9 +258,11 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 950px) {
 
     .card-container {
-        height: 100%;
-        align-content: flex-start;
-        background-color: #FFFFFF;
+        height: auto;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .card {
